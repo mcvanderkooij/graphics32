@@ -2552,7 +2552,7 @@ procedure TCustomBitmap32.Assign(Source: TPersistent);
       Exit;
     end;
 
-    TempBitmap := TCustomBitmap32.Create;
+    TempBitmap := TBitmap32.Create;
     try
       AssignFromGraphicPlain(TempBitmap, SrcGraphic, clRed32, False); // mask on red
 
