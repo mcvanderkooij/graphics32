@@ -2332,6 +2332,7 @@ begin
   while DashOffset < 0 do
   begin
     Inc(DashIndex);
+    DashIndex := Wrap(DashIndex, high(DashArray));
     DashOffset := DashOffset + DashArray[DashIndex];
   end;
 
